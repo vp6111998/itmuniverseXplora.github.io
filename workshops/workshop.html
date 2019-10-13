@@ -1,0 +1,236 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <title>
+             Workshops
+        </title>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Comfortaa|Roboto|Raleway');
+            body{
+                padding: 0;
+                margin: 0;
+            }
+            .section-header{
+                margin: 0;  
+                text-align: center;
+                vertical-align: center;
+                font-size: 1.6em;
+                font-family: 'Comfortaa';
+                background-color: #121212;
+                color: aliceblue;
+                
+            }
+            .section-header h3{
+                margin-top: 0;
+                padding: 20px;                                   
+            }
+            .flex-container{
+                display: flex;
+                flex-wrap: row wrap;
+                align-items: center;
+                width: 100%;
+                text-align: center;
+                justify-content: center;
+                background-color: white;
+            }
+
+            .flex-container > #workshop-details p{
+	            text-align: justify;
+	            padding: 50px;
+	            margin-top: 30px;
+	            font-size: 1.5em;
+	            font-family: 'Raleway';
+            }
+
+            .flex-container > #workshop-img img{
+	            width: 50%;
+	            margin-top: 30px;
+            }
+            .flex-container-img{
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                width: 100%;
+                text-align: center;
+                justify-content: center;
+                background-color: white;
+            } 
+            .flex-container-img img{
+                border-radius: 15px;
+                border: #121212 2px solid;
+                margin: 30px;
+                width: 250px;
+                height: 200px;
+                image-resolution: inherit;
+            }
+
+            
+            .flex-container-img img:hover{
+                transform: scale(1.2);
+            }
+
+            .more-button{
+                display: none;
+            }
+            .flex-container > #workshop-img-resources img{
+	            width: 50%;
+	            margin-top: 30px;
+            }
+
+            
+            footer{
+                padding-top: 15px;
+                padding-bottom: 15px;
+                margin-top:20px;
+                color:#ffffff;
+                font-size: 0.8em;
+                font-family: 'Comfortaa';
+                background-color:#121212;
+                text-align: center;
+            }
+
+            @media(max-width: 768px){
+                .section-header h3{
+                    font-size: 1.0em;
+                }
+                .flex-container{
+                    display: flex;
+                    width: 100%;
+                    flex-direction: column;
+                    background-color: white;
+                    overflow: hidden;
+                }
+
+                .flex-container > #workshop-details p{
+		            font-size: 1.0em;
+		            padding: 30px;
+		            margin-top: 0px;
+		            font-family: 'Raleway';	
+	            }
+
+
+                .flex-container-img img{
+                    border-radius: 15px;
+                    border: #121212 0px solid;
+                    margin: 10px;
+                    width: 90%;
+                    height: auto;
+                    image-resolution: inherit;
+                }
+                
+                .flex-container-img img:hover{
+                    transform: scale(1.0);
+                }
+
+                .more-button{
+                    display: block;
+                    border-radius: 45px 0px 60px 0px;
+                    border: none;
+                    font-family: 'Comfortaa';
+                    height: 40px;
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                    background-color:#121212;
+                    color:white;
+                    text-align: center;
+                    width: 40%;
+
+                }
+
+                .more{
+                    display: none;
+                }
+
+                 #workshop-img-resources img{
+	                width: 50%;
+                    margin-top: 100%;
+                    margin-bottom: 100%;
+                }
+                
+                footer{
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    margin-top:20px;
+                    color:#ffffff;
+                    font-size: 0.6em;
+                    font-family: 'Comfortaa';
+                    background-color:#121212;
+                    text-align: center;
+                }
+
+            }
+        </style>
+        <script>
+            function myFunction() {
+                var moreImg = document.getElementsByClassName("more");
+                var btnText = document.getElementById("myBtn");
+                for(var i=0;i<moreImg.length;i++){
+                    moreImg[i].style.display='block';
+                }
+                btnText.style.display='none';   
+            } 
+        </script>
+    </head>
+    <body>
+       
+        <section class="section-header">
+            <h3>Gallery</h3>
+        </section>
+        <section>
+            <div class="flex-container-img">
+                <div>
+                    <img src="../image/workshop/git.jpg">
+                </div>
+                
+                <div>
+                    <img src="../image/workshop/lb.jpg">
+                </div>
+                    
+                <div>
+                    <img src="../image/workshop/audience.jpg">
+                </div>
+                <div class="more">
+                    <img src="../image/workshop/game.jpg">
+                </div>
+                                
+                <div class="more">
+                    <img src="../image/workshop/logic.jpg">
+                </div>
+                            
+                <div class="more">
+                    <img src="../image/workshop/vfx.jpg">
+                </div>
+                                
+                <div class="more">
+                    <img src="../image/workshop/IMG-20191013-WA0007.jpg">
+                </div>
+                   <div class="more">
+                    <img src="../image/workshop/group.jpg">
+                </div>
+
+                <button class="more-button" id="myBtn" onclick="myFunction()">More</button>    
+            </div>
+        </section>
+         
+        <section class="section-header">
+                <h3>Workshop Resources</h3>
+        </section>
+        <section>
+            <div class="flex-container">
+                <div id="workshop-details">
+                    <p>
+                        Click on image to get Workshop Resources.
+                    </p>
+                </div>
+                <div id="workshop-img-resources">
+                    <a href="https://github.com/itmuniverseXplora/workshop_resources"><img src="../image/mon.png"></a>
+                </div>
+            </div>
+        </section>
+    
+        <footer>
+            <p>Made by Xplora Club</p>
+            <p>Copyright &copy; 2019</p>
+        </footer>
+    </body>
+</html>

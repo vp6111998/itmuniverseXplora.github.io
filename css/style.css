@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Roboto|Raleway');
+.navbar, .navbar-default {
+	border-radius: 0;
+	border: none;
+	margin-bottom: 0;
+	background-color: white !important;
+	background-image: none;
+  min-height: 80px;
+}
+
+.navbar-default .navbar-brand{
+	text-align: center;
+	padding: 25px;
+	background-color:white;
+}
+
+.navbar-default .navbar-collapse{
+	background-color: white;
+}
+
+.navbar-default .navbar-toggle, .navbar-header{
+	background-color: white;
+}
+
+#logo{
+	width: 150px;
+	height: 50px;
+}
+
+.nav li {
+    display: inline-block;
+    color: white;
+}
+
+
+.navbar-default .navbar-nav > li > a {
+	color: #ffffff;
+	font-family: 'Roboto';
+  font-size: 1.4em;
+	font-weight: 500;
+	padding: 30px 25px 33px 25px;
+}
+
+.navbar-default .navbar-nav{
+	margin-left: 30px;
+	background-color: white;
+}
+
+
+
+.poster{
+	text-align: center;
+}
+.poster img{
+	width: 1000px;
+	
+}
+
+/*Newsletter*/
+/* .container-newsletter{
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+
+.button_1{
+	height:38px;
+	background:#1E88E5;
+	border:0;
+	font-family: 'Comfortaa';
+	font-weight: bold;
+	padding-left: 20px;
+	padding-right:20px;
+	color:#ffffff;
+}
+
+#newsletter{
+	padding:15px;
+	color:#1E88E5;
+	font-family: 'Comfortaa';
+	background:#FFF;
+  }
+  
+#newsletter h1{
+	float:left;
+}
+  
+#newsletter #SubscribeForm {
+	float:right;
+	margin-top:15px;
+}
+  
+#newsletter input[type="email"]{
+	padding:18px;
+	height:25px;
+	width:250px;
+}
+*/
+	
+.section-header div{
+	background-color: #121212;
+	color: #FFF;
+	width: 100%;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-bottom: 10px;
+}
+
+.section-header div h2{
+	font-size: 2.9em;
+	font-family: 'Roboto';
+	vertical-align: center;
+	text-align: center;
+}
+
+.flex-container{
+	display: flex;
+	flex-wrap: row wrap;
+	align-items: center;
+	width: 100%;
+	text-align: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.flex-container > #about-us-para p{
+	text-align: justify;
+	padding: 50px;
+	font-size: 1.5em;
+	font-family: 'Raleway';
+}
+
+.flex-container > #about-us-gif #img-tag{
+	padding: 30px;
+	width: 600px;
+} 
+
+.flex-container > #workshop-details p{
+	text-align: justify;
+	padding: 50px;
+	margin-top: 30px;
+	font-size: 1.5em;
+	font-family: 'Raleway';
+}
+
+.flex-container > #workshop-img img{
+	width: 70%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+} 
+
+
+
+.flex-container > .box-profile-team{
+	border-radius: 20px;
+	border:1px solid black;
+	padding:21px;
+	margin:30px; 
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	width:20%;
+	height: auto !important;
+	font-family: 'Comfortaa';
+}
+
+.flex-container > .box-profile-team img{
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+	object-fit: cover;
+}
+
+.flex-container > .box-profile-team #logos a{
+	margin-left: 8px;
+}
+.flex-container > .box-profile-team #logos a i{
+	font-size: 20px;
+	color: #616161;
+}
+
+footer{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-top:15px;
+	color:#ffffff;
+	font-size: 0.8em;
+	font-family: 'Comfortaa';
+	background-color:#121212;
+	text-align: center;
+}
+
+.flex-container > .contact-img img{
+	width: 100px;
+	padding: 10%;
+	height: auto;
+}
+
+
+
+@media(max-width: 768px){
+	body{
+		font-size: 16px;
+	}
+	#logo{
+		width: 210px;	
+		height: auto;
+	}
+	.navbar-default .navbar-brand{
+		padding-top: 15px;
+		text-align: center;
+	
+	}
+
+	.navbar-default .navbar-nav > li > a {
+		font-size: 1.0em; 
+	}
+	
+
+	.navbar-default .navbar-nav{
+		margin-left: 0px;
+	}
+
+	.poster img{
+		height: auto;
+		width: 100%;
+	}
+
+	#newsletter button, .quote button{
+		display:block;
+		width:100%;
+	}
+	
+	#newsletter form #email, .quote input, .quote textarea{
+		width:100%;
+		margin-bottom:5px;
+	}
+
+	#newsletter h1,
+  #newsletter form{
+    float:none;
+    text-align:center;
+    width:100%;
+	}
+
+	
+	.section-header div h2{
+		font-size: 1.7em;
+	}
+
+
+	.flex-container{
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		background-color: white;
+		overflow: hidden;
+	}
+	
+	.flex-container > #about-us-para p{
+		text-align: justify;
+		padding: 30px;
+		font-size: 1.0em;
+		font-family: 'Raleway';	
+	}
+
+	.flex-container > #about-us-gif #img-tag{
+		width:100%;
+	}
+
+	.flex-container > #workshop-details p{
+		font-size: 1.0em;
+		padding: 30px;
+		margin-top: 0px;
+		font-family: 'Raleway';	
+	}
+
+	.flex-container > #workshop-img img{
+		width:100%;
+		padding: 20px;
+	}
+	
+	.flex-container > .box-profile-team{
+  	border-radius: 20px;
+  	border:1px solid black;
+		margin:15px;
+  	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  	width:83%;
+  	font-family: 'Comfortaa';
+	}
+	footer{
+		padding-top: 15px;
+		padding-bottom: 15px;
+		margin-top:15px;
+		color:#ffffff;
+		font-size: 0.6em;
+		font-family: 'Comfortaa';
+		background-color:#121212;
+		text-align: center;
+}
+
+
+
+	@media(max-width: 320px){
+		body{
+			font-size: 16px;
+		}
+		#logo{
+			width: 170px;	
+			height: auto;
+		}
+		.navbar-default .navbar-brand{
+			padding-top: 15px;
+			text-align: center;
+		
+		}
+	}
+	
+}
